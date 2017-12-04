@@ -5,7 +5,7 @@ channels:
 - defaults
 dependencies:
 - bcftools=1.5=3
-- bedtools=2.26.0=0
+- bedtools=2.25.0=2
 - bioconductor-annotate=1.50.0=r3.3.2_1
 - bioconductor-annotationdbi=1.38.0=r3.3.2_0
 - bioconductor-annotationforge=1.14.2=r3.3.2_0
@@ -53,7 +53,10 @@ dependencies:
 - bioconductor-variantannotation=1.20.3=r3.3.2_0
 - bioconductor-xvector=0.14.1=r3.3.2_0
 - bioconductor-zlibbioc=1.20.0=r3.3.2_1
+- biopython=1.70=np112py36_1
+- blast=2.7.1=boost1.64_1
 - bowtie2=2.3.2=py36pl5.22.0_1
+- clustalw=2.1=1
 - cufflinks=2.2.1=py36_1
 - deeptools=2.5.3=py36_0
 - dropbox=5.2.1=py36_0
@@ -112,6 +115,10 @@ dependencies:
 - tbb=4.4_20150728=0
 - trimmomatic=0.36=4
 - asn1crypto=0.22.0=py36_0
+- backports=1.0=py36_1
+- backports.functools_lru_cache=1.4=py36_1
+- boost=1.64.0=py36_4
+- boost-cpp=1.64.0=1
 - bzip2=1.0.6=1
 - cairo=1.14.6=4
 - certifi=2017.4.17=py36_0
@@ -121,6 +128,7 @@ dependencies:
 - curl=7.54.1=0
 - cycler=0.10.0=py36_0
 - dbus=1.10.10=3
+- decorator=4.1.2=py36_0
 - docutils=0.13.1=py36_0
 - expat=2.2.1=0
 - fontconfig=2.12.1=4
@@ -128,6 +136,7 @@ dependencies:
 - gettext=0.19.7=1
 - glib=2.51.4=0
 - gmp=6.1.2=0
+- gnutls=3.5.15=0
 - graphite2=1.3.9=0
 - gsl=1.16=0
 - gst-plugins-base=1.8.0=0
@@ -135,27 +144,41 @@ dependencies:
 - harfbuzz=1.4.3=0
 - icu=58.1=1
 - idna=2.5=py36_0
+- ipython=6.2.1=py36_0
+- ipython_genutils=0.2.0=py36_0
+- jedi=0.10.2=py36_0
 - jpeg=9b=0
 - krb5=1.14.2=0
 - libffi=3.2.1=3
 - libiconv=1.14=4
+- libidn11=1.33=0
 - libpng=1.6.28=1
 - libssh2=1.8.0=1
 - libtiff=4.0.6=7
 - libxcb=1.12=1
 - libxml2=2.9.4=4
-- matplotlib=2.0.2=py36_1
+- matplotlib=2.1.0=py36_1
+- mmtf-python=1.0.9=py_0
+- msgpack-python=0.4.8=py36_0
 - ncurses=5.9=10
+- nettle=3.3=0
+- olefile=0.44=py36_0
 - pandas=0.20.3=py36_1
 - pango=1.40.4=0
 - paramiko=2.2.1=py36_0
 - patsy=0.4.1=py36_0
 - pcre=8.39=0
 - perl=5.22.0.1=0
+- pexpect=4.3.0=py36_0
+- pickleshare=0.7.4=py36_0
+- pillow=4.3.0=py36_0
 - pixman=0.34.0=0
+- prompt_toolkit=1.0.15=py36_0
 - psutil=5.2.1=py36_0
+- ptyprocess=0.5.2=py36_0
 - pyasn1=0.2.3=py36_0
 - pycparser=2.18=py36_0
+- pygments=2.2.0=py36_0
 - pynacl=1.1.2=py36_0
 - pyopenssl=16.2.0=py36_0
 - pyparsing=2.2.0=py36_0
@@ -239,12 +262,16 @@ dependencies:
 - r-xml=3.98_1.6=r3.3.2_0
 - r-xtable=1.8_2=r3.3.2_0
 - readline=6.2=0
+- reportlab=3.4.0=py36_0
 - requests=2.18.1=py36_0
+- simplegeneric=0.8.1=py36_0
 - sip=4.18=py36_1
 - six=1.10.0=py36_1
 - statsmodels=0.8.0=np112py36_0
 - tornado=4.5.1=py36_0
+- traitlets=4.3.2=py36_0
 - urllib3=1.21.1=py36_1
+- wcwidth=0.1.7=py36_0
 - wrapt=1.10.8=py36_0
 - xorg-libxau=1.0.8=3
 - xorg-libxdmcp=1.1.2=3
@@ -266,6 +293,9 @@ dependencies:
 - xz=5.2.2=1
 - zlib=1.2.8=3
 - pip:
+  - backports.functools-lru-cache==1.4
   - htseq==0.9.1
+  - ipython-genutils==0.2.0
+  - prompt-toolkit==1.0.15
 prefix: /home/xfu/miniconda2/envs/gmatic
 
