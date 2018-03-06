@@ -54,6 +54,7 @@ dependencies:
 - bioconductor-xvector=0.14.1=r3.3.2_0
 - bioconductor-zlibbioc=1.20.0=r3.3.2_1
 - biopython=1.70=np112py36_1
+- bismark=0.19.0=pl5.22.0_0
 - blast=2.7.1=boost1.64_1
 - bowtie2=2.3.2=py36pl5.22.0_1
 - clustalw=2.1=1
@@ -65,9 +66,16 @@ dependencies:
 - ftputil=3.2=py36_0
 - gfold=1.1.4=gsl1.16_1
 - hisat2=2.1.0=py36pl5.22.0_0
+- hmmer=3.1b2=3
 - htslib=1.5=0
 - igvtools=2.3.93=0
+- jellyfish=1.1.11=1
+- kraken=1.0=pl5.22.0_0
 - manormfast=0.1.2=py36_1
+- megahit=1.1.2=py36_0
+- mysql-connector-c=6.1.6=2
+- parallel=20170422=pl5.22.0_0
+- picard=2.15.0=py36_0
 - py2bit=0.2.1=py36_0
 - pybedtools=0.7.10=py36_1
 - pybigwig=0.3.4=np112py36_0
@@ -109,11 +117,15 @@ dependencies:
 - r-viridis=0.3.1=r3.3.2_0
 - r-yaml=2.1.13=r3.3.2_1
 - samtools=1.5=0
+- seqkit=0.7.2=0
+- seqtk=1.2=0
 - snakemake=3.13.3=py36_0
 - sra-tools=2.8.2=0
 - star=2.5.3a=0
 - tbb=4.4_20150728=0
 - trimmomatic=0.36=4
+- ucsc-bigwigtobedgraph=357=0
+- ucsc-wigtobigwig=357=0
 - asn1crypto=0.22.0=py36_0
 - backports=1.0=py36_1
 - backports.functools_lru_cache=1.4=py36_1
@@ -155,6 +167,7 @@ dependencies:
 - libpng=1.6.28=1
 - libssh2=1.8.0=1
 - libtiff=4.0.6=7
+- libuuid=1.0.3=1
 - libxcb=1.12=1
 - libxml2=2.9.4=4
 - matplotlib=2.1.0=py36_1
@@ -293,9 +306,40 @@ dependencies:
 - xz=5.2.2=1
 - zlib=1.2.8=3
 - pip:
+  - aenum==2.0.9
+  - avro-cwl==1.8.4
   - backports.functools-lru-cache==1.4
+  - beautifulsoup4==4.6.0
+  - bioblend==0.10.0
+  - boto==2.48.0
+  - cachecontrol==0.11.7
+  - click==6.7
+  - configparser==3.5.0
+  - cwltool==1.0.20170828135420
+  - ephemeris==0.8.0
+  - future==0.16.0
+  - galaxy-lib==17.9.10
+  - glob2==0.6
+  - gxformat2==0.1.1
+  - html5lib==1.0.1
   - htseq==0.9.1
   - ipython-genutils==0.2.0
+  - isodate==0.6.0
+  - jinja2==2.10
+  - lockfile==0.12.2
+  - lxml==4.1.1
+  - markupsafe==1.0
+  - mistune==0.7.4
   - prompt-toolkit==1.0.15
+  - pyaml==17.12.1
+  - rdflib==4.2.2
+  - rdflib-jsonld==0.4.0
+  - requests-toolbelt==0.8.0
+  - ruamel.yaml==0.14.12
+  - schema-salad==2.6.20171201034858
+  - shellescape==3.4.1
+  - typing==3.6.2
+  - virtualenv==15.1.0
+  - webencodings==0.5.1
 prefix: /home/xfu/miniconda2/envs/gmatic
 
