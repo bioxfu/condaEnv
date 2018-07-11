@@ -12,6 +12,15 @@ git clone https://github.com/bioxfu/condaEnv
 cd condaEnv
 bash install_conda.sh 
 ```
+##### Edit *environment.yml* file
+change
+```
+prefix: /home/xfu/miniconda2/envs/gmatic
+```
+to
+```
+prefix: /cluster/home/xfu/miniconda2/envs/gmatic
+```
 ##### Create new Conda enviroment on server
 ```
 bash create_conda_env.sh
